@@ -186,11 +186,7 @@
 				</configuration>
 				
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>3.2</version>
-			</plugin>
+			
 			</plugin>
 		</plugins>
 	</build>
