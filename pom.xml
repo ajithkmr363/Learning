@@ -184,7 +184,10 @@
 					<target>1.8</target>
 					<showWarnings>true</showWarnings>
 				</configuration>
-				artifactId>maven-deploy-plugin</artifactId>
+				
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
 				<version>3.2</version>
 			</plugin>
 			</plugin>
