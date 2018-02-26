@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+		WithMaven{
+		 Maven : MAVEN_HOME
+              mvn clean build
+            }
+			}
+        }
+		stage('test') {
+		steps {
+		WithMaven{
+		 Maven : MAVEN_HOME
+              mvn clean test
+            }
+			}
+		}
+		stage('install') {
+		steps {
+		WithMaven{
+		 Maven : MAVEN_HOME
+              mvn clean install
+            }
+			}
+		}
+    }
+}
